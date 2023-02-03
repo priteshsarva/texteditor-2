@@ -1,8 +1,8 @@
 import React, { useState } from 'react'
 import NavBar from './components/NavBar'
 import TextArea from './components/TextArea'
-import About from './components/About'
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+// import About from './components/About'
+// import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 const App = () => {
 
@@ -25,14 +25,15 @@ const App = () => {
 
   return (
     <>
-
-      <BrowserRouter>
-        <NavBar title="Text Editor" toggle={setToggle} mode={mode} />
-        <Routes>
-          <Route path="/" element={<TextArea mode={mode} />} />
-          <Route path="/about" element={<About mode={mode} />} />
-        </Routes>
-      </BrowserRouter>
+      <NavBar title="Text Editor" toggle={setToggle} mode={mode} />
+      <TextArea mode={mode} />
+      {/* <BrowserRouter> */}
+        
+        {/* <Routes> */}
+          {/* <Route path="/" element={<TextArea mode={mode} />} /> */}
+          {/* <Route path="/about" element={<About mode={mode} />} /> */}
+        {/* </Routes> */}
+      {/* </BrowserRouter> */}
 
 
 
