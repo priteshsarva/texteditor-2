@@ -4,10 +4,14 @@ const ResTextArea = (props) => {
 
     const statushide =()=>{
         props.status(false)
+        props.showAlert("Text Reseted", "success")
+
     }
 
     const onClickCopy= (e)=>{
         navigator.clipboard.writeText(props.ans);
+        props.showAlert("Copied", "success")
+
     }
 
 

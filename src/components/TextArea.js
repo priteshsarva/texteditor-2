@@ -16,7 +16,7 @@ const TextArea = (props) => {
   const onUpperCase = () => {
     setResponse(text.toUpperCase())
     setShowresult(true)
-    
+    props.showAlert("Converted to UpperCase", "success")
 
   }
 
@@ -24,6 +24,8 @@ const TextArea = (props) => {
   const onLowerCase = () => {
     setResponse(text.toLowerCase())
     setShowresult(true)
+    props.showAlert("Converted to LowerCase", "success")
+
   }
 
 
@@ -36,7 +38,7 @@ const TextArea = (props) => {
         <button type="button" className="btn btn-primary col-2 m-2" onClick={onLowerCase}>Lower case</button>
         {/* <button type="button" className="btn btn-primary col-2 m-2">Primary</button> */}
       </div>
-      {showresult ? <ResTextArea status={setShowresult} ans={response} mode={props.mode}/> : null}
+      {showresult ? <ResTextArea status={setShowresult} ans={response} mode={props.mode} showAlert={props.showAlert} /> : null}
 
     </>
   )
