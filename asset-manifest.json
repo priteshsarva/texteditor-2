@@ -1,10 +1,10 @@
 {
   "files": {
-    "main.js": "/texteditor-2/static/js/main.93440fa7.js",
+    "main.js": "/texteditor-2/static/js/main.62e730c2.js",
     "index.html": "/texteditor-2/index.html",
-    "main.93440fa7.js.map": "/texteditor-2/static/js/main.93440fa7.js.map"
+    "main.62e730c2.js.map": "/texteditor-2/static/js/main.62e730c2.js.map"
   },
   "entrypoints": [
-    "static/js/main.93440fa7.js"
+    "static/js/main.62e730c2.js"
   ]
 }
