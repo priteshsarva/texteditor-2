@@ -1,5 +1,5 @@
 import React from 'react'
-// import { Link } from 'react-router-dom'
+import { Link } from 'react-router-dom'
 
 
 
@@ -17,7 +17,7 @@ const NavBar = (props) => {
                          
                           <li className="nav-item">
                               {/* <a href="/about" className="nav-link active" >About Us</a> */}
-                              {/* <Link to="/about" className="nav-link active" >About Us</Link> */}
+                              <Link to="/about" className="nav-link active" >About Us</Link>
                               
                           </li>
 

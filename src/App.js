@@ -1,8 +1,8 @@
 import React, { useState } from 'react'
 import NavBar from './components/NavBar'
 import TextArea from './components/TextArea'
-// import About from './components/About'
-// import { BrowserRouter, Routes, Route } from "react-router-dom"
+import About from './components/About'
+import { BrowserRouter, Routes, Route } from "react-router-dom"
 import Alert from './components/Alert'
 
 const App = () => {
@@ -42,18 +42,18 @@ const App = () => {
 
   return (
     <>
-      <NavBar title="Text Editor" toggle={setToggle} mode={mode} />
+      {/* <NavBar title="Text Editor" toggle={setToggle} mode={mode} />
       <Alert mode={alert} />
+      <TextArea mode={mode} showAlert={showAlert} /> */}
 
-      <TextArea mode={mode} showAlert={showAlert} />
-      {/* <BrowserRouter>
+      <BrowserRouter>
         <NavBar title="Text Editor" toggle={setToggle} mode={mode} />
         <Alert mode={alert}/>
         <Routes>
           <Route path="/" element={<TextArea mode={mode} showAlert={showAlert} />} />
           <Route path="/about" element={<About mode={mode} />} />
         </Routes>
-      </BrowserRouter> */}
+      </BrowserRouter>
 
 
 

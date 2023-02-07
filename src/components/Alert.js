@@ -12,14 +12,14 @@ const Alert = (props) => {
 
     
       
-    //   <div style={{ height: "60 px" }}>
-      props.mode && 
+      <div style={{ height: "50px" }}>
+      {props.mode && 
       <div className={`alert alert-${props.mode.typ} alert-dismissible fade show`} role="alert">
               <strong>   {captalise(props.mode.typ  )}:</strong> {props.mode.msg}    
               {/* <strong>Holy guacamole!</strong> You should check in on some of those fields below. */}
-          </div>  
+          </div>  }
 
-    //   </div>
+     </div>
 
   )
 }
