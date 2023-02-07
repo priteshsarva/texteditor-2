@@ -16,7 +16,7 @@ const NavBar = (props) => {
                       <ul className="navbar-nav me-auto mb-2 mb-lg-0">
                          
                           <li className="nav-item">
-                              <a href="/about" className="nav-link active" >About Us</a>
+                              {/* <a href="/about" className="nav-link active" >About Us</a> */}
                               {/* <Link to="/about" className="nav-link active" >About Us</Link> */}
                               
                           </li>

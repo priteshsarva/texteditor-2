@@ -42,8 +42,10 @@ const App = () => {
 
   return (
     <>
-    
-      <TextArea mode={mode} />
+      <NavBar title="Text Editor" toggle={setToggle} mode={mode} />
+      <Alert mode={alert} />
+
+      <TextArea mode={mode} showAlert={showAlert} />
       {/* <BrowserRouter>
         <NavBar title="Text Editor" toggle={setToggle} mode={mode} />
         <Alert mode={alert}/>
